@@ -1,5 +1,5 @@
 body {color:black;}
 p {font-family : "helvetica";}
-p {text-align :center;color:blue;}
+p {text-align :center;color}
 div * p {color:red;}
 div * li{color:green}
