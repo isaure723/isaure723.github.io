@@ -1,0 +1,36 @@
+ /* Exercice 1 */
+body {background-image:url(cement.jpg);}
+
+h1{text-align:center;}
+h2{color:blue; background-color: grey;}
+
+p{text-align: justify; text-indent:16px;}
+
+ /* Exercice 2 et 3 */
+p.surligne{background-color: seashell;}
+p{background-color: seashell;}
+span{background-color: yellow;}
+
+ /* Exercice 4 */
+ol li{list-style-type: upper-roman;}
+ol li ol li{list-style-type: lower-alpha;}
+ol li ol li ol li{list-style-type: lower-roman;}
+
+ /* Exercice 5 */
+nav{
+text-align:center;
+background-color: white;
+text-decoration: text-shadow: #FC0 1px 0 10px*;
+color:black;
+height: 80px;
+line-height: 44px; 
+font-family: italic 1.2em "Fira Sans", serif;
+font-size: 40px;
+letter-spacing: 0.5em
+}
+
+nav{white-space:normal;}
+
+nav{border-width:1px;
+border-style:dotted;
+border-color:black;}
