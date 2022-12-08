@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	body {background-color:seashell}
+	</style>
+<!--Création Index-->
+	<meta charset="UTF-8">
+	<title> GROUPE 1 - le 08/12/2022</title>
+</head>
+
+   <body>
+<h1> Les meilleurs groupes de musique !  </h1>
+<br>
+<label for="sujet">Ecoutez vous de la musique ?</label>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>choisir</option>
+<option value="probleme-compte">De temps en temps</option>
+<option value="question-produit">Toujours</option>
+<option value="suivi-commande">Jamais</option>
+</select>
+
+<h2> Cochez les groupes que vous aimez</h2>
+<input type="checkbox" id="case2" name="groupe1" value="case 2">
+<label for="case1">Queen</label>
+<br>
+<input type="checkbox" id="case2" name="groupe1" value="case 2">
+<label for="case2">ABBA</label>
+<br>
+<input type="checkbox" id="case2" name="groupe1" value="case 2">
+<label for="case3">Scorpions</label>
+
+<p>
+<form action="https://www.youtube.com/watch?v=_Jtpf8N5IDE">
+<button type="submit">Who wants to live forever</button></form>
+<form action="https://www.youtube.com/watch?v=xFrGuyw1V8s">
+<button type="submit">Dancing Queen</button></form>
+<form action="https://www.youtube.com/watch?v=7pOr3dBFAeY">
+<button type="submit">Still loving you</button></form>
+</form>
+
+<div class="polaroid-images">
+        <a href="" title="Queen"><img height="200" src="queen-e1652778680881.jpg" alt="Cave" title="Cave" /></a>
+        <a href="" title="ABBA"><img height="200" src="file7hd8ieniayo1er880dab.jpg" alt="Island" title="Island" /></a>
+        <a href="" title="Scorpions"><img height="200" src="Scorpions_-_01.jpg" alt="Islands Forest" title="Islands Forest" /></a>
+</div>
+
+<p>
+<form method="post" action="ton_script_recup_data_form.php">
+<p>Pseudo de rockeur: <input type="text" name="pseudo" value="" /></p>
+<p>
+Votre commentaire :
+<textarea name="commentaire" rows="20" cols="80"></textarea>
+</p>
+</form>
+
+<div class="contactez-nous">
+<h1>Contactez-nous</h1></div>
+<p>Des suggestions musicales, une question, envie de nous envoyer vos meilleures performances ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+<form action="/page-traitement-donnees" method="post"></form>
+
+<div>
+<label for="nom">Votre nom </label>
+<input type="text" id="nom" name="nom" placeholder="Freddy Mercury" required>
+</div>
+
+<div>
+<label for="email">Votre e-mail</label>
+<input type="email" id="email" name="email" placeholder="freddy.mercury@gmail.com" required>
+</div>
+
+<div>
+<label for="sujet">Quel est le sujet de votre message ?</label>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+<option value="probleme-compte">Problème avec mon compte</option>
+<option value="question-produit">Question à propos d’un chanteur</option>
+<option value="suivi-commande">Suivi des actualités</option>
+<option value="autre">Autre...</option>
+</select>
+</div>
+
+<div>
+<label for="message">Votre message</label>
+<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+</div>
+</body>

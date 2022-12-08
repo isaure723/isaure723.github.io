@@ -1,0 +1,17 @@
+div * p {text-align:center}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Colors</title>
+</head>
+<body>
+	<p>juste p</p>
+	<div>
+		<p> Div puis p </p>
+		<strong><p>Div puis strong puis p</p></strong
+		<ol><li></li></ol>
+
+</body>
+</html>
