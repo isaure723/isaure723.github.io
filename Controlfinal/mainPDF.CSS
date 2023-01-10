@@ -1,0 +1,31 @@
+@media print {
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    display: none;
+  }
+
+  input[type="checkbox"] {display: none;
+} 
+  input[type="checkbox"]:not(:checked) + label{
+    display: none;
+} 
+  
+  input[type="checkbox"]:checked + label::before {
+    content: "- ";
+  }
+
+ input[form action="#"] {display: none;
+} 
+  input[form action="#"]:not(:option) + label{
+    display: none;
+} 
+  
+  input[form action="#"]:option + label::before {
+    content: "- ";
+  }
+   span {display: none;}
+    
+}

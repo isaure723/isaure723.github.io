@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Conrôle final du 10/01/2023-->
+	<meta charset="UTF-8">
+	<title> Lettre de motivation </title>
+    <link rel="stylesheet" type="text/css" href="mainPDF.CSS" media="print" />
+  <body>
+  <h1>Lettre de motivation </h1>
+
+<form method="post" action="traitement.php">
+
+    <p>
+       <span><label for="nom">Votre prénom et NOM :</label></span>
+
+        <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Klaus MEIN" size="30" maxlength="30" />
+
+    </p>
+
+</form>
+
+<fieldset>
+    <legend>Choisissez votre année de licence</legend>
+
+    <div>
+      <input type="checkbox" id="L1" name="L1" checked>
+      <label for="L1">L1</label>
+    </div>
+    <div>
+      <input type="checkbox" id="L2" name="L2" checked>
+      <label for="L2">L2</label>
+    </div>
+    <div>
+      <input type="checkbox" id="L3" name="L3" checked>
+      <label for="L3">L3</label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Choisissez le parcours auquel vous postulez</legend>
+
+    <div>
+      <input type="checkbox" id="Parcours Droit et informatique" name="Parcours Droit et informatique" checked>
+      <label for="Parcours Droit et informatique">Parcours Droit et informatique</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Parcours Stars des années 90" name="Parcours Stars des années 90">
+      <label for="Parcours Stars des années 90">Parcours Stars des années 90</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Parcours Biologie" name="Parcours Biologie">
+      <label for="Parcours Biologie">Parcours Biologie</label>
+    </div>
+</fieldset>
+<br>
+<br>
+<div class="Lettre de motivation">
+<form action="/page-traitement-donnees" method="post">
+<div>
+<label for="date">Date</label>
+<input type="text" id="date" name="date" placeholder="jour/mois/année" required>
+</div>
+<br>
+<div>
+<label for="email">Votre e-mail</label>
+<input type="email" id="email" name="email" placeholder="klausmein@mail.com" required>
+</div>
+<br>
+<div>
+<name for="Avez-vous postulé dans d'autres universités ?">Avez-vous postulé dans d'autres universités ?</name>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>Oui/Non</option>
+<option value="Oui">Oui</option>
+<option value="Non">Non</option>
+</select>
+</div>
+<br>
+
+<form method="post" action="traitement.php">
+   <p>
+       <label for="motivation">
+
+       <span>Rédigez votre lettre de motivation</span>
+
+       </label>
+
+       <br />
+       <!--On intègre ici le corps de la lettre de motivation-->
+       <textarea name="motivation" id="motivation" rows="20" cols="120">
+
+     "Madame, Monsieur, je souhaite postuler au sein de...."
+       </textarea>      
+   </p>
+</form>
+
+<form action="#">
+     <span><label for="Formule de politesse">Formule de politesse</label></span>
+      <select name="Formule de politesse" id="formule">
+        <option value="Dans l'attente de votre réponse, veuillez agréer Madame, Monsieur, mes sincères salutations.">Dans l'attente de votre réponse, veuillez agréer Madame, Monsieur, mes sincères salutations.</option>
+        <option value="En espérant que ma candidature retiendra votre attention, veuillez agréer, Madame, Monsieur, ma considération distinguée.">En espérant que ma candidature retiendra votre attention, veuillez agréer, Madame, Monsieur, ma considération distinguée.</option>
+        <option value="Me tenant à votre disposition pour un prochain entretien, je vous prie d’agréer, Madame, Monsieur, mes sincères salutations.">Me tenant à votre disposition pour un prochain entretien, je vous prie d’agréer, Madame, Monsieur, mes sincères salutations.</option>
+      </select>
+</form>
+<br>
+
+<div>
+<form>
+<span><input type="button" value="Imprimer" onClick="window.print()"></span>
+</form>
+</div>
+</body>
